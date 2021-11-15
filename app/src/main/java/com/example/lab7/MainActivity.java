@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 .setSmallIcon(R.drawable.ic_baseline_chat_24)
                 .setContentTitle(t)
                 .setContentText(m)
-                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setPriority(NotificationCompat.PRIORITY_LOW)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .setColor(Color.BLUE)
                 .setContentIntent(contentIntent)
@@ -86,6 +86,6 @@ public class MainActivity extends AppCompatActivity {
                 .setOnlyAlertOnce(true)
                 .addAction(R.mipmap.ic_launcher, "Toast", action)
                 .build();
-        notificationManager.notify(1, notification);
+        notificationManager.notify(2, notification);
     }
 }
